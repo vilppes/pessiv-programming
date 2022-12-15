@@ -1,8 +1,13 @@
 #include<stdio.h>
-//TODO main program
+#include "./conversion.h"
 int main() {
-	//TODO prompt user for inches
+	float inch, cm;	
 	printf("insert your inches please (preferably in 2 decimal precision): ");
-	//TODO output equivalent cms in 2 decimal precision
-	//TODO print error if input is invalid
+	if(scanf("%f",&inch) == 1){ 
+		printf("%0.2f",inchesToCm(inch));
+	}
+	else {
+		printf("Error: invalid input"); //TODO make this stderr
+	}
 }
+//i use Neovim to code btw xD
